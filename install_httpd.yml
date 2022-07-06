@@ -1,0 +1,7 @@
+---
+- name: playbook | install httpd
+  hosts: all
+  become: yes
+  tasks:
+    - name: task | install htptd
+      package: name=httpd state=installed
